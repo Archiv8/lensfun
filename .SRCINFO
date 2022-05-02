@@ -1,0 +1,21 @@
+pkgbase = lensfun-git
+	pkgdesc = Database of photographic lenses and a library that allows advanced access to the database
+	pkgver = 0.3.2.r2032.gad957f64
+	pkgrel = 1
+	url = https://lensfun.github.io/
+	arch = i686
+	arch = x86_64
+	license = LGPL3
+	makedepends = git
+	makedepends = python
+	makedepends = libpng
+	makedepends = cmake
+	depends = glibc
+	depends = glib2
+	optdepends = python: for lensfun-update-data and lensfun-add-adapter
+	provides = lensfun=0.3.0
+	conflicts = lensfun
+	source = lensfun::git+https://github.com/lensfun/lensfun.git
+	sha512sums = SKIP
+
+pkgname = lensfun-git
